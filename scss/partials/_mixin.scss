@@ -1,0 +1,13 @@
+@mixin input-style($background, $width, $number: 3.6em, $height: 3.6em) {
+  border-radius: $number;
+  width: $width;
+  height: $height;
+  background: $background;
+  outline: none;
+}
+
+@mixin message-style($color) {
+  color: $color;
+  text-align: left;
+  padding: 0.5em 1.5em;
+}

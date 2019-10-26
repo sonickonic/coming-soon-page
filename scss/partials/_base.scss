@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+
+  .logo {
+    margin: 2.14em;
+    height: 1.6em;
+  }
+}
+
+body {
+  text-align: center;
+  font-family: $font;
+  font-size: 14px;
+
+  .main-paragraph {
+    color: lighten($Desaturated-Red, 5%);
+    font-weight: 400;
+    line-height: 1.8;
+    padding: 1.5em 2.14em;
+  }
+}
+
+.main-container {
+  background-image: linear-gradient(135deg, #ffffff, #fff4f4);
+  padding-bottom: 6em;
+}
+
+h1 {
+  color: $Dark-Grayish-Red;
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 3em;
+  letter-spacing: 0.3em;
+  padding-top: 65px;
+
+  span {
+    color: $Desaturated-Red;
+    font-weight: 300;
+  }
+}
+
+footer {
+  padding: 1em;
+}
