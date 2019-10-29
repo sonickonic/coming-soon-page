@@ -48,7 +48,9 @@ emailInput.addEventListener('focusout', () => {
   emailContainer.classList.remove('selected');
 });
 
-btn.addEventListener('click', () => {
+
+btn.addEventListener('click', (e) => {
+  e.preventDefault();
   remStyle();
 
   if (isValid(emailInput.value)) {

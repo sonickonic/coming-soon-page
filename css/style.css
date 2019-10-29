@@ -171,6 +171,16 @@ input::placeholder {
   color: #e6caca;
 }
 
+@-webkit-keyframes autofill {
+  to {
+    background: transparent;
+  }
+}
+input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
+
 button {
   border-radius: 3.6em;
   width: 22%;

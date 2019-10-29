@@ -27,6 +27,17 @@ input {
   }
 }
 
+@-webkit-keyframes autofill {
+  to {
+      background: transparent;
+  }
+}
+
+input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
+
 button {
   @include input-style(linear-gradient(135deg, #f7bebe, #ed8b8b), 22%);
   box-shadow: 0px 10px 20px 4px rgba(249, 97, 97, 0.15);
