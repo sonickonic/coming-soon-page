@@ -4,23 +4,26 @@
 
 .message {
   @include message-style(lighten($Desaturated-Red, 5%));
+  position: absolute;
 }
 
 .error-message {
   @include message-style($Soft-Red);
+  position: absolute;
 }
 
 .not-valid {
   box-shadow: 0px 0px 0px 2px $Soft-Red inset;
 }
 
-form {
-  position: relative;
-}
-
 .icon-error {
   height: 20px;
   position: absolute;
   right: 5.5em;
-  top: 1.1em;
+  top: 2.1em;
+
+  @include screen-l {
+    right: 7em;
+    top: 1.1em;
+  }
 }

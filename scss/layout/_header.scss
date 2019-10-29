@@ -1,0 +1,40 @@
+header {
+  display: flex;
+  justify-content: flex-start;
+
+  .logo {
+    margin: 2.14em;
+    height: 1.6em;
+  }
+}
+
+@include screen-l {
+  header {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 390px 1fr 400px;
+    width: 100%;
+
+    .header-container {
+      width: 390px;
+      grid-column: 2;
+      display: flex;
+    }
+
+    .logo {
+      margin: 0;
+      margin-top: 2.5em;
+      height: 2em;
+    }
+  }
+}
+
+@include screen-xl {
+  header {
+    grid-template-columns: 1fr 390px 1fr 610px;
+
+    .logo {
+      margin-top: 3em;
+    }
+  }
+}

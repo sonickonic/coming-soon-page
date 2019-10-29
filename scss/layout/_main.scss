@@ -1,0 +1,102 @@
+.main-container {
+  background-image: linear-gradient(135deg, #ffffff, #fff4f4);
+  padding-bottom: 6em;
+
+  .main-paragraph {
+    color: lighten($Desaturated-Red, 5%);
+    font-weight: 400;
+    line-height: 1.8;
+    padding: 1.5em 2.14em;
+    max-width: 390px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.img-container {
+  height: 250px;
+  overflow: hidden;
+  margin-bottom: 65px;
+
+  .main-img {
+    width: 100%;
+  }
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: $Dark-Grayish-Red;
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 3em;
+  letter-spacing: 0.3em;
+
+  span {
+    color: $Desaturated-Red;
+    font-weight: 300;
+  }
+}
+
+footer {
+  padding: 1em;
+}
+
+@include screen-m {
+  .img-container {
+    height: 400px;
+  }
+}
+
+@include screen-l {
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    padding-bottom: 0;
+  }
+
+  h1 {
+    min-width: 390px;
+  }
+
+  .left-container {
+    background: url('../images/bg-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1;
+    grid-row: 1;
+    text-align: left;
+
+    .main-paragraph {
+      margin: 0;
+      padding: 1.5em 0;
+    }
+  }
+
+  .img-container {
+    grid-column: 2;
+    margin-bottom: 0;
+    height: 100%;
+
+    .main-img {
+      width: inherit;
+    }
+  }
+}
+
+@include screen-xl {
+  .main-container {
+    grid-template-columns: 1fr 610px;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+}

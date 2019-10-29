@@ -1,0 +1,54 @@
+form {
+  margin: 0;
+  position: relative;
+}
+
+.form-container {
+  @include input-style(transparent, 100%);
+  box-shadow: 0px 0px 0px 1px lighten($Dark-Grayish-Red, 60%) inset;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1em;
+  max-width: 390px;
+  min-width: 310px;
+}
+
+input {
+  flex-grow: 1;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  height: 3.6em;
+  outline: none;
+
+  &::placeholder {
+    color: lighten($Desaturated-Red, 15%);
+  }
+}
+
+button {
+  @include input-style(linear-gradient(135deg, #f7bebe, #ed8b8b), 22%);
+  box-shadow: 0px 10px 20px 4px rgba(249, 97, 97, 0.15);
+  display: flex;
+  border: none;
+  justify-content: center;
+  max-width: 100px;
+  min-width: 67px;
+
+  &:active {
+    background: linear-gradient(to right, #fff4f4, #f7bebe);
+    box-shadow: 0px 10px 20px 4px rgba(249, 97, 97, 0.3);
+  }
+}
+
+@include screen-l {
+  form {
+    margin: 0;
+
+    .form-container {
+      margin: 0;
+      min-width: 390px;
+    }
+  }
+}

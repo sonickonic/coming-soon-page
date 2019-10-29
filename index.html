@@ -12,31 +12,35 @@
 
   <body>
     <header>
-      <img class="logo" src="images/logo.svg" alt="Base Apparel logo" />
+      <div class="header-container">
+        <img class="logo" src="images/logo.svg" alt="Base Apparel logo" />
+      </div>
     </header>
 
     <main class="main-container">
+      <div class="img-container">
       <picture>
-        <source media="(min-width: 900px)" srcset="images/hero-desktop.jpg" />
-        <img class="main-img" src="images/hero-mobile.jpg" alt="picture of a women"/>
+          <source media="(min-width: 900px)" srcset="images/hero-desktop.jpg" />
+          <img class="main-img" src="images/hero-mobile.jpg" alt="picture of a women"/>
       </picture>
+      </div>
 
-      <h1><span>We're</span><br />coming soon</h1>
-
-      <p class="main-paragraph">
-        Hello fellow shoppers! We're currently building our new fashion store.
-        Add your email below to stay up-to-date with announcements and our
-        launch deals.
-      </p>
-
-      <form class="sign-up">
-        <div class="form-container">
-          <input class="input" type="text" placeholder="Email Address" />
-          <button class="sign-btn" type="button">
-            <img src="images/icon-arrow.svg" alt="Icon arrow" />
-          </button>
-        </div>
-      </form>
+      <div class="left-container">
+        <h1><span>We're</span><br/>coming<br/>soon</h1>
+        <p class="main-paragraph">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form class="sign-up">
+          <div class="form-container">
+            <input class="input" type="text" placeholder="Email Address" />
+            <button class="sign-btn" type="button">
+              <img src="images/icon-arrow.svg" alt="Icon arrow" />
+            </button>
+          </div>
+        </form>
+      </div>
     </main>
 
     <footer>

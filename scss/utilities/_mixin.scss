@@ -11,3 +11,22 @@
   text-align: left;
   padding: 0.5em 1.5em;
 }
+
+
+@mixin screen-m {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin screen-l {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin screen-xl {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}

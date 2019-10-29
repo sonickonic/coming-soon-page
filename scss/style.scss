@@ -1,5 +1,10 @@
-@import 'partials/variables',
-        'partials/mixin',
-        'partials/base',
-        'partials/form',
-        'partials/message';
+@import 'utilities/variables',
+        'utilities/mixin',
+
+        'base/reset',
+        'base/typography',
+
+        'layout/header',
+        'layout/main',
+        'layout/form',
+        'layout/message';
